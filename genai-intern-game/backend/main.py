@@ -1,7 +1,7 @@
 # main.py
 
 from fastapi import FastAPI
-from backend.api import game  # Import game.py which might now handle start session
+from backend.api import game  
 
 from backend.core import ai_client 
 from backend.core import cache
@@ -17,7 +17,7 @@ app.include_router(game.router)
 def read_root():
     return {"message": "Welcome to the Generative AI Game API!"}
 
-# ---- TEMPORARY: Create DB tables ----
+# ---- TEMPORARY Creating DB tables ----
 from backend.db.database import Base, engine
 from backend.db import models
 
