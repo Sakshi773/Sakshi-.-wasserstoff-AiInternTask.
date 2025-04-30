@@ -1,7 +1,7 @@
 import requests
 import time
 
-BASE_URL = "http://localhost:9000"  # Make sure the FastAPI backend is running
+BASE_URL = "http://localhost:9000"  
 
 def test_start_session():
     """
