@@ -22,18 +22,25 @@ docker-compose down
 
 ### 1. Start a Game Session
 a) Endpoint: POST /start-session
+
 b) What to do: Provide an initial seed word i.e. rock.
+
 c) Purpose: This sets the  base idea for the session.
+
 d) Result: The API returns a session_id like 4. Use this ID to make guesses.
 
 ### 2.Make a Guess
 a) Endpoint: POST /guess
+
 b) What to do: Use the session ID from the previous step and submit a word guess.
+
 c) Purpose: The API checks if the guess is valid, compares it to internal associations and possibly updates the game state.
 
 ### 3. Check Guess History 
 a) Endpoint: GET /history/{session_id}
+
 b) What it does: Retrieves the last 5 guesses made in the current session.
+
 c) Why it helps: Useful if you want to track your progress, avoid repeating guesses or get inspired for the next move.
 
 ## Architectural Choices
