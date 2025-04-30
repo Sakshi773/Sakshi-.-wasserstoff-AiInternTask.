@@ -6,6 +6,7 @@ Rock-Paper-Scissors AI Game is a web-based game where you play Rock, Paper, Scis
 
 ### 1. Cloning the repository
 git clone https://github.com/<Sakshi773>/<Sakshi-.-wasserstoff-AiInternTask.>.git
+
 cd <Sakshi-.-wasserstoff-AiInternTask.>
 
 ### 2. Running the application
